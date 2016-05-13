@@ -1,10 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>房源搜索</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../sui/dist/css/sm.css">
+    <link rel="stylesheet" href="../sui/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../less/main.css">
+
+    <style>
+        .list-block {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
+
+<div class="page-group">
+
+    <div class="page" id="list">
+        <header class="bar bar-nav">
+            <a href="main.html" class="logo">
+                <img src="../images/logo-icon.png" alt="">
+            </a>
+            <div class="pull-right">
+                <i class="iconfont">
+                    &#xe600;
+                </i>
+                <i class="iconfont open-panel panel-right">
+                    &#xe601;
+                </i>
+            </div>
+        </header>
+        <div class="bar bar-header-secondary">
+            <div class="searchbar">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <label class="icon icon-search" for="search"></label>
+                    <input type="search" id='search' placeholder='输入关键字...'/>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div class="list-block media-list">
+                <ul class="list-wrap">
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic16.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>莲溪六村</p>
+                            <p>2室1厅 64m² 南 北
+                                <span class="price">305万</span></p>
+                            <p>53439元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满五</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic15 .jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>万邦都市花园</p>
+                            <p>1室1厅 52m² 南
+                                <span class="price">450万</span></p>
+                            <p>86025元/㎡
+
+                            </p>
+                            <p>
+                                <!--<span class="maner">满二</span>-->
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic14.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>张江汤臣豪园</p>
+                            <p>2室2厅 88m² 西 南
+                                <span class="price">640万</span></p>
+                            <p>72047元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <!--<span class="yaoshi">钥匙房</span>-->
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic13.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>万达广场（周浦）</p>
+                            <p>1室1厅 42m²  北
+                                <span class="price">68万</span></p>
+                            <p>15973元/㎡
+
+                            </p>
+                            <p>
+                                <!--<span class="maner">满二</span>-->
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic12.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>培花七村</p>
+                            <p>1室1厅 54m²
+                                <span class="price">280万</span></p>
+                            <p>51584元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic11.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>御桥花园</p>
+                            <p>3室2厅 85m² 南
+                                <span class="price">450万</span></p>
+                            <p>52478元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic10.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>浦江世博花园十街坊</p>
+                            <p>2室2厅 80²² 南北
+                                <span class="price">275万</span></p>
+                            <p>34068元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <!--<span class="ditie">地铁房</span>-->
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic9.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>香樟园（浦东）</p>
+                            <p>2室1厅 67m² 南北
+                                <span class="price">325万</span></p>
+                            <p>48284元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic8.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>地杰国际城</p>
+                            <p>2室2厅 80m² 南
+                                <span class="price">360万</span></p>
+                            <p>44466/㎡
+
+                            </p>
+                            <p>
+                                <!--<span class="maner">满二</span>-->
+                                <span class="yaoshi">钥匙房</span>
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic6.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>证大家园</p>
+                            <p>3室2厅 105m² 南
+                                <span class="price">730万</span></p>
+                            <p>69109/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <span class="yaoshi">钥匙房</span>
+                                <!--<span class="ditie">地铁房</span>-->
+                            </p>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./detail.html">
+                            <div class="left">
+                                <img src="../images/pic7.jpg" style='width: 5rem;'>
+                                <i class=""></i>
+                            </div>
+                            <p>金旋小区</p>
+                            <p>1室1厅 37m² 南
+                                <span class="price">210万</span></p>
+                            <p>56104元/㎡
+
+                            </p>
+                            <p>
+                                <span class="maner">满二</span>
+                                <!--<span class="yaoshi">钥匙房</span>-->
+                                <span class="ditie">地铁房</span>
+                            </p>
+                        </a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--弹出元素-->
+    <div class="panel panel-right panel-reveal main-page">
+        <div class="content-block">
+            <img class="user-pic" src="../images/broker_pic1.png" alt="">
+            <p><a href="">二手房</a></p>
+            <p><a href="">租房</a></p>
+            <p><a href="">房屋委托</a></p>
+            <p><a href="">个人中心</a></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="javascript:;" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+<!--<script>-->
+<!--$.init();-->
+<!--</script>-->
 </body>
 </html>
